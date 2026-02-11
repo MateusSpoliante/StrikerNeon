@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NEON STRIKE: SINGULARITY</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="grain"></div>
+    <div class="scanlines"></div>
+    
+    <div id="hud">
+        <div class="top-row">
+            <div class="glitch-text" data-text="SISTEMA:">LVL: <span id="levelVal">1</span></div>
+            <div id="scoreBox">SCORE: <span id="scoreVal">000000</span></div>
+        </div>
+        
+        <div class="bars-stack">
+            <div class="bar-wrapper">
+                <div class="label">INTEGRIDADE DO NÚCLEO</div>
+                <div class="progress-bg"><div id="hpBar" class="progress-fill hp"></div></div>
+            </div>
+            <div class="bar-wrapper">
+                <div class="label">SUPERNOVA (ESPAÇO)</div>
+                <div class="progress-bg"><div id="specialBar" class="progress-fill special"></div></div>
+            </div>
+        </div>
+    </div>
+
+    <canvas id="gameCanvas"></canvas>
+
+    <div id="overlay" class="active">
+        <div class="terminal">
+            <h1 class="scanner-text">NEON_STRIKE_OS</h1>
+            <p id="statusMsg">PRONTO PARA IMPLANTAÇÃO ORBITAL</p>
+            <div class="boss-warning" id="bossWarn">ALERTA: ASSINATURA DE BOSS DETECTADA</div>
+            <button id="startBtn">INICIAR PROTOCOLO</button>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+</body>
+</html>
